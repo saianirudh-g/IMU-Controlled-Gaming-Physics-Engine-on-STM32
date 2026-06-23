@@ -67,3 +67,64 @@ All game visuals are rendered as ASCII frames in the **SWV ITM Data Consol
 ├── SWV_Output/
 │   └── game_log.txt
 └── README.md
+
+----
+
+## Description
+
+### Core/Src
+- **main.c** – Application entry point and initialization.
+- **physics.c** – Ball movement, gravity, and collision calculations.
+- **game.c** – Game logic, scoring, and state management.
+- **renderer.c** – OLED/LCD graphics rendering functions.
+- **audio.c** – Buzzer and sound effect generation.
+- **mpu6050.c** – MPU6050 sensor driver and data processing.
+- **flash.c** – Flash memory operations for high-score storage.
+
+### Core/Inc
+Header files corresponding to source modules.
+
+### Drivers
+Contains STM32 HAL drivers and CMSIS libraries.
+
+### SWV_Output
+Stores SWV debug logs and runtime diagnostics.
+
+### README.md
+Project documentation and setup instructions.
+
+---
+
+## 🚀 How to Run
+1. Open the project in **STM32CubeIDE**.  
+2. Ensure **SWV ITM Data Console** is open and **Port 0** is active.  
+3. Press **Start Trace** before running.  
+4. Build and flash the firmware.  
+5. Tilt the board to move the ball and press **USER button** to start or restart.
+
+---
+
+## 🧮 Core Logic Example
+
+void Physics_Update(GameObject *ball, float dt) {
+    ball->velocity.x += ball->acceleration.x * dt;
+    ball->velocity.y += ball->acceleration.y * dt;
+    ball->position.x += ball->velocity.x * dt;
+    ball->position.y += ball->velocity.y * dt;
+    CheckCollision(ball);
+}
+
+---
+
+###FINAL RESULT AFTER PLAYING
+### NEW HIGH SCORE!
+Final Score: 454
+Press USER button to restart
+
+---
+
+## 🪙 Credits
+
+- **Developed by:** Sai Anirudh Godavarthi
+- **Guided by:** Microsoft Copilot – AI Learning Companion
+- **Date:** June 2025
