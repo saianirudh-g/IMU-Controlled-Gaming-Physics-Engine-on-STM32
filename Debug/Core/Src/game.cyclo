@@ -1,0 +1,7 @@
+../Core/Src/game.c:27:17:Flash_ReadHighScore	2
+../Core/Src/game.c:35:13:Flash_WriteHighScore	1
+../Core/Src/game.c:53:12:ButtonPressed	1
+../Core/Src/game.c:58:13:IMU_GetTiltAngles	1
+../Core/Src/game.c:64:13:ResetGame	1
+../Core/Src/game.c:85:6:Game_Init	1
+../Core/Src/game.c:92:6:Game_Update	15

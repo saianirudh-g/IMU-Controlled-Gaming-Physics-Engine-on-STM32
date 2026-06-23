@@ -1,0 +1,4 @@
+../Core/Src/renderer.c:5:6:Renderer_Init	8	static
+../Core/Src/renderer.c:10:6:Renderer_DrawMenu	16	static
+../Core/Src/renderer.c:22:6:Renderer_DrawGame	88	static
+../Core/Src/renderer.c:96:6:Renderer_DrawGameOver	24	static
