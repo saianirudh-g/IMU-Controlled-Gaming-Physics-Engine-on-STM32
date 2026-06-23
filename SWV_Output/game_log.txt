@@ -1,0 +1,12 @@
+NEW HIGH SCORE!
+
+Press USER button to restart
+
+[2J[H============== GAME OVER ==============
+
+Final Score: 454
+High Score : 454
+
+NEW HIGH SCORE!
+
+Press USER button to restart
